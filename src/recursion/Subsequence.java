@@ -22,7 +22,7 @@ public class Subsequence {
 		
 	}
 
-	public static void main(String[] args) {
+	public static void main(StringPermutation[] args) {
 		ArrayList<Integer> list=new ArrayList<>();
 		ArrayList<ArrayList<Integer>> lists=new ArrayList<>();
 		int[] arr= {1,2,3,4};

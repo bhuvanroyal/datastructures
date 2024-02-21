@@ -185,15 +185,15 @@ public class TreeStruct {
 }
 	
 	public void constructTree() {
-		root.left=new Node(2);
-		root.right=new Node(3);
-		root.left.left=new Node(4);
-		root.left.right=new Node(5);
-		root.left.right.left=new Node(8);
+		root.left=new Node(5);
+		root.right=new Node(1);
+		root.left.left=new Node(3);
+		root.left.right=new Node(2);
+//		root.left.right.left=new Node(8);
 		root.right.left=new Node(6);
-		root.right.right=new Node(7);
-		root.right.left.right=new Node(9);
-		root.right.left.right.right=new Node(10);
+//		root.right.right=new Node(7);
+//		root.right.left.right=new Node(9);
+//		root.right.left.right.right=new Node(10);
 		
 	}
 	
@@ -201,7 +201,7 @@ public class TreeStruct {
 	public static void main(String[] args) {
 		TreeStruct tree = new TreeStruct();
 		
-		tree.insert(1);
+		tree.insert(4);
 		tree.constructTree();
 //		tree.insert(2);
 //		tree.insert(3);
@@ -219,10 +219,10 @@ public class TreeStruct {
 		System.out.println("inOrder");
 		tree.inOrder(tree.root);
 		
-		tree.iterativePreOrder2(tree.root);
-		tree.iterativeInorder(tree.root);
-		tree.iterativePostOrder(tree.root);
-		
+//		tree.iterativePreOrder2(tree.root);
+//		tree.iterativeInorder(tree.root);
+//		tree.iterativePostOrder(tree.root);
+//		
 		
 		
 

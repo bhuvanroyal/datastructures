@@ -2,7 +2,7 @@ package recursion;
 
 public class Palindrome {
 
-	public static boolean checkPalindrome(String str) {
+	public static boolean checkPalindrome(StringPermutation str) {
 		if(str.length()<=1) {
 			return true;
 		}
@@ -13,9 +13,9 @@ public class Palindrome {
 		
 	}
 	
-	public static void main(String[] args) {
+	public static void main(StringPermutation[] args) {
 
-		String str="SMADAMS";
+		StringPermutation str="SMADAMS";
 		System.out.println(checkPalindrome(str));
 
 	}

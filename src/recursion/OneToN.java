@@ -11,9 +11,9 @@ public class OneToN {
 		System.out.print(n +" ");
 	}
 
-	public static void main(String[] args) {
+	public static void main(StringPermutation[] args) {
 		
-		function(5);
+		System.out.println(132/10);
 
 	}
 

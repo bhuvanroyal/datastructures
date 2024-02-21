@@ -2,20 +2,20 @@ package recursion;
 import java.util.*;
 public class SubsequencesOfString{
 	
-	public static void subsequence(String str) {
+	public static void subsequence(StringPermutation str) {
 		
-		Queue<String> queue=new LinkedList<>();
+		Queue<StringPermutation> queue=new LinkedList<>();
 		for(int i=0;i<str.length();i++) {
-			queue.add(String.valueOf(i));
+			queue.add(StringPermutation.valueOf(i));
 			while(!queue.isEmpty()) {
-				String temp=queue.remove();
-				String sum="";
-				for(String k:temp.split("")) {
-					sum+=String.valueOf(str.charAt(Integer.parseInt(k)));
+				StringPermutation temp=queue.remove();
+				StringPermutation sum="";
+				for(StringPermutation k:temp.split("")) {
+					sum+=StringPermutation.valueOf(str.charAt(Integer.parseInt(k)));
 				}
 				System.out.println(sum);
 				for(int j=Integer.valueOf(temp.charAt(temp.length()-1));j<str.length();j++) {
-					queue.add(temp+String.valueOf(j));
+					queue.add(temp+StringPermutation.valueOf(j));
 				}
 			}
 		}
@@ -23,9 +23,9 @@ public class SubsequencesOfString{
 	}
 	
 
-	public static void main(String[] args) {
+	public static void main(StringPermutation[] args) {
 		
-		String str="abcd";
+		StringPermutation str="abcd";
 		subsequence(str);
 		
 
